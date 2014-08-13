@@ -1,0 +1,19 @@
+We are in .
+That resolves to /Users/lerickson/Documents/Cross Platform Perl/02 Path-Class
+On volume: 
+
+The directories are:
+	
+	Users
+	lerickson
+	Documents
+	Cross Platform Perl
+	02 Path-Class
+
+We built a new, exciting path: /Users/lerickson/Documents/Cross Platform Perl/02 Path-Class/new/subdir/with/spaces in it/temp_file.txt
+
+On Unixish systems, that is /Users/lerickson/Documents/Cross Platform Perl/02 Path-Class/new/subdir/with/spaces in it/temp_file.txt
+
+On Windowsy systems, that is \Users\lerickson\Documents\Cross Platform Perl\02 Path-Class\new\subdir\with\spaces in it\temp_file.txt
+
+On old Mac systems, that is Users:lerickson:Documents:Cross Platform Perl:02 Path-Class:new:subdir:with:spaces in it:temp_file.txt

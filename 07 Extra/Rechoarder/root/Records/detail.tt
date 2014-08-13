@@ -1,0 +1,18 @@
+[%- # Provide a title -%]
+[% META title = 'Record Details' -%]
+
+[% IF record %]
+    <h2>Record details for [% searchId %]</h2>
+    [% PROCESS "records/record_form.tt" %]
+[% ELSE %]
+    <h2>No such record [% searchId %] exists.</h2>
+[% END %]
+
+[% IF c.user_exists %]
+[% IF record %]
+<form action="[%- c. uri_for("id", record.formatId, "edit") -%]" method="post">
+    <input type="submit" value ="Edit this record">
+</form>
+[% END %]
+[% END %]
+[% INCLUDE lib/footer.tt %]

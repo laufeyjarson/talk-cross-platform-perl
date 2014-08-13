@@ -1,0 +1,20 @@
+We are in .
+That resolves to /media/psf/Home/Documents/Cross Platform Perl/02 Path-Class
+On volume: 
+
+The directories are:
+	
+	media
+	psf
+	Home
+	Documents
+	Cross Platform Perl
+	02 Path-Class
+
+We built a new, exciting path: /media/psf/Home/Documents/Cross Platform Perl/02 Path-Class/new/subdir/with/spaces in it/temp_file.txt
+
+On Unixish systems, that is /media/psf/Home/Documents/Cross Platform Perl/02 Path-Class/new/subdir/with/spaces in it/temp_file.txt
+
+On Windowsy systems, that is \media\psf\Home\Documents\Cross Platform Perl\02 Path-Class\new\subdir\with\spaces in it\temp_file.txt
+
+On old Mac systems, that is media:psf:Home:Documents:Cross Platform Perl:02 Path-Class:new:subdir:with:spaces in it:temp_file.txt

@@ -1,0 +1,11 @@
+[%- # Provide a title -%]
+[% META title = 'Import images to DB' -%]
+
+[% IF message %]
+    <h2>Results of import:</h2>
+
+    [% FOR l IN message %]
+    <p>[% l %]</p>
+    [% END %]
+[% END %]
+[% INCLUDE lib/footer.tt %]

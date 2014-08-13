@@ -1,0 +1,1 @@
+-rwxr-xr-x 1 lerickson None  435 Apr  3 14:11 findpl.pl

@@ -1,0 +1,17 @@
+We are in .
+That resolves to M:\Documents\Cross Platform Perl\02 Path-Class
+On volume: M:
+
+The directories are:
+	
+	Documents
+	Cross Platform Perl
+	02 Path-Class
+
+We built a new, exciting path: M:\Documents\Cross Platform Perl\02 Path-Class\new\subdir\with\spaces in it\temp_file.txt
+
+On Unixish systems, that is /Documents/Cross Platform Perl/02 Path-Class/new/subdir/with/spaces in it/temp_file.txt
+
+On Windowsy systems, that is M:\Documents\Cross Platform Perl\02 Path-Class\new\subdir\with\spaces in it\temp_file.txt
+
+On old Mac systems, that is M:Cross Platform Perl:02 Path-Class:new:subdir:with:spaces in it:temp_file.txt

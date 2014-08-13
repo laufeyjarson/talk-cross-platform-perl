@@ -1,0 +1,10 @@
+total 0
+drwxr-xr-x 1 lerickson users  306 Apr  5  2014 .
+drwxr-xr-x 1 lerickson users  544 Apr  5 11:51 ..
+-rw-r--r-- 1 lerickson users  435 Apr  3 14:11 findpl.pl
+-rw-r--r-- 1 lerickson users    0 Apr  5 12:08 input-linux.txt
+-rw-r--r-- 1 lerickson users   57 Apr  5 12:08 output-linux.txt
+-rw-r--r-- 1 lerickson users   61 Apr  5 12:07 output-osx.txt
+-rw-r--r-- 1 lerickson users   50 Apr  5 12:07 output-win-as.txt
+-rw-r--r-- 1 lerickson users   56 Apr  5 12:08 output-win-cygwin.txt
+-rw-r--r-- 1 lerickson users 1479 Apr  5 12:08 readme.txt

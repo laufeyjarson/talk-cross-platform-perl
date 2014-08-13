@@ -1,0 +1,15 @@
+We are in .
+That resolves to /media/psf/Home/Documents/Cross Platform Perl/01 File-Spec
+That breaks down to:
+vol:	
+dir:	/media/psf/Home/Documents/Cross Platform Perl/01 File-Spec
+file:	
+The directories are:
+	
+	media
+	psf
+	Home
+	Documents
+	Cross Platform Perl
+	01 File-Spec
+We built a new, exciting path: /media/psf/Home/Documents/Cross Platform Perl/01 File-Spec/new/subdir/with/spaces in it/temp_file.txt

@@ -1,0 +1,17 @@
+ Volume in drive M is Shared Folders
+
+ Directory of M:\Documents\Cross Platform Perl\03 crlf
+
+04/05/2014  12:09 PM    <DIR>          .
+04/05/2014  11:51 AM    <DIR>          ..
+04/03/2014  02:11 PM               435 findpl.pl
+04/05/2014  12:09 PM               599 input-cygwin.txt
+04/05/2014  12:08 PM               545 input-linux.txt
+04/05/2014  12:09 PM                98 input-win-cmd.txt
+04/05/2014  12:08 PM                57 output-linux.txt
+04/05/2014  12:07 PM                61 output-osx.txt
+04/05/2014  12:07 PM                50 output-win-as.txt
+04/05/2014  12:08 PM                56 output-win-cygwin.txt
+04/05/2014  12:08 PM             1,479 readme.txt
+               9 File(s)          3,380 bytes
+               2 Dir(s)  424,780,726,272 bytes free

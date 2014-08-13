@@ -1,0 +1,23 @@
+[%- # Provide a title -%]
+[% META title = 'Record List' -%]
+
+[% # Some basic HTML with a loop to display records -%]
+<table id="table1">
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Label</th>
+    <th>Artist(s)</th>
+</tr>
+</thead>
+<tbody>
+[% # Display each records in a table row %]
+[% FOREACH record IN records -%]
+  <tr>
+    <td><a href="[%- c.uri_for("record", "detail", record.id) -%]">[% record.title %]</a></td>
+    <td><a href="[%- c.uri_for("record", "detail", record.id) -%]">[% record.label.name %]</a></td>
+    <td><a href="[%- c.uri_for("record", "detail", record.id) -%]">[% record.artist.name %]</a></td>
+  </tr>
+[% END -%]
+</tbody>
+</table>

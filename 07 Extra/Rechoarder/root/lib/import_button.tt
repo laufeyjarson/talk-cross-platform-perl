@@ -1,0 +1,1 @@
+<a href="[%- c. uri_for("/records/import/pictures") -%]">Image Import</a>

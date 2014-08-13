@@ -1,0 +1,6 @@
+<a href="[%- c. uri_for('/records/list') -%]">Record List</a>
+[% IF c.user_exists %]
+[% INCLUDE lib/import_button.tt %]
+[% INCLUDE lib/new_button.tt %]
+[% INCLUDE lib/logout_button.tt %]
+[% END %]

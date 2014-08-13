@@ -1,0 +1,48 @@
+<table class="vert_table">
+
+[% INCLUDE row label='Title' value=form.title name='title' size=80 %]
+[% INCLUDE row label='Artist' value=form.artist name='artist' size=80 %]
+[% INCLUDE row label='Cover&nbsp;Condition' value=form.cover_condition name='cover_condition' list=conditions %]
+[% INCLUDE row label='Media&nbsp;Condition' value=form.media_condition name='media_condition' list=conditions %]
+[% INCLUDE row label='Price' value=form.price name='price' size=10 %]
+[% INCLUDE row label='Category' value=form.category name='category' size=15 %]
+[% INCLUDE row label='Description' value=form.description name='description' size=16000 cols=80 rows=10 %]
+[% INCLUDE row label='Label' value=form.label name='label' size=10 %]
+[% INCLUDE row label='Release&nbsp;Year' value=form.release_year name='release_year' size=5 %]
+[% INCLUDE row label='Release&nbsp;Month' value=form.release_month name='release_month' size=3 %]
+[% INCLUDE row label='Release&nbsp;Day' value=form.release_day name='release_day' size=3 %]
+[% INCLUDE row label='Release&nbsp;Number' value=form.release_number name='release_number' size=10 %]
+[% INCLUDE row label='Release&nbsp;Country' value=form.release_country name='release_country' size=10 %]
+[% INCLUDE row label='Mono&nbsp;or&nbsp;Stereo' value=form.mono_stereo name='mono_stereo' list=mono_stereo_types %]
+[% INCLUDE row label='Number&nbsp;of&nbsp;Records' value=form.nrecinset name='nrecinset' size=5 %]
+[% INCLUDE row label='On&nbsp;Hand' value=form.onhand name='onhand' size=10 %]
+
+<!-- pictures -->
+
+[% IF c.user_exists %]
+[% INCLUDE row label='Location' value=form.physical_location name='physical_location' size=35 %]
+[% END %]
+
+[% BLOCK row %]
+<tr>
+  <th>[% label %]:</th>
+  [% IF edit %]
+    [% IF rows and cols %]
+      <td><textarea name="[%- name -%]" maxlength="[%- size -%]" rows="[%- rows -%]" cols="[%- cols -%]">[%- value -%]</textarea></td>
+    [% ELSIF list %]
+        <td>
+            <select name="[%- name -%]">
+                [% FOREACH item IN list %]
+                <option [%- IF item == value -%] selected [%- END -%]>[% item %]</option>
+                [% END %]
+            </select>
+        </td>
+    [% ELSE %]
+      <td><input name="[%- name -%]" type="text" size="[%- size -%]" value="[%- value -%]"></input></td>
+    [% END %]
+  [% ELSE %]
+  <td>[% value %]</td>
+  [% END %]
+</tr>
+[% END %]
+</table>

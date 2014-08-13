@@ -1,0 +1,33 @@
+[%- # Provide a title -%]
+[% META title = 'Record List' -%]
+
+<script type="javascript">
+$(document).ready(function()
+    {
+        $("#table1").tablesorter();
+    }
+);
+</script>
+
+[% # Some basic HTML with a loop to display records -%]
+<table id="table1" class="tablesorter">
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Label</th>
+    <th>Artist(s)</th>
+</tr>
+</thead>
+<tbody>
+[% # Display each book in a table row %]
+[% FOREACH record IN records -%]
+  <tr>
+    <td><a href="[%- c.uri_for("id", record.formatId, "detail") -%]">[% record.title %]</a></td>
+    <td><a href="[%- c.uri_for("id", record.formatId, "detail") -%]">[% record.label.name %]</a></td>
+    <td><a href="[%- c.uri_for("id", record.formatId, "detail") -%]">[% record.artist.name %]</a></td>
+  </tr>
+[% END -%]
+</tbody>
+</table>
+
+[% INCLUDE lib/footer.tt %]

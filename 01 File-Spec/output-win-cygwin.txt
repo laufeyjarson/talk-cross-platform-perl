@@ -1,0 +1,14 @@
+We are in .
+That resolves to /cygdrive/m/Documents/Cross Platform Perl/01 File-Spec
+That breaks down to:
+vol:	
+dir:	/cygdrive/m/Documents/Cross Platform Perl/01 File-Spec
+file:	
+The directories are:
+	
+	cygdrive
+	m
+	Documents
+	Cross Platform Perl
+	01 File-Spec
+We built a new, exciting path: /cygdrive/m/Documents/Cross Platform Perl/01 File-Spec/new/subdir/with/spaces in it/temp_file.txt

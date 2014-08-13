@@ -1,0 +1,25 @@
+[%- # Provide a title -%]
+[% META title = 'Create New Record' -%]
+
+[% IF record and c.user_exists %]
+    <h2>Record details for [% searchId %]</h2>
+
+    [% IF errors %]
+        <p>Please correct the following problems and submit again:</p>
+        [% FOREACH e IN errors %]
+            <p>[% e %]</p>
+        [% END %]
+    [% END %]
+
+    <form method="post" action="[%- c. uri_for("id", record.formatId, "edit") -%]">
+    [% PROCESS "records/record_form.tt" edit=1 %]
+    <input type="Submit" name="submit" value="Save Changes">
+    </form>
+[% ELSE %]
+    <h2>No such record [% searchId %] exists.</h2>
+[% END %]
+
+[% IF c.user_exists %]
+<a href="[%- c. uri_for("id", record.formatId, "detail") -%]">Cancel</a>
+[% END %]
+[% INCLUDE lib/footer.tt %]
